@@ -1,0 +1,30 @@
+server:
+  port: 8083
+
+cloud:
+  aws:
+    region:
+      auto: false
+      static: us-east-1
+    stack:
+      auto: false
+    credentials:
+      access-key:
+      secret-key:
+    sqs:
+        queue: desafio_btg_pedidos
+
+spring:
+  rabbitmq:
+    host: localhost
+    port: 8082
+    username: admin
+    password: admin
+  data:
+    mongodb:
+      uri: mongodb://admin:admin@localhost:27017/btg
+  autoconfigure:
+    exclude:
+      - org.springframework.cloud.aws.autoconfigure.context.ContextInstanceDataAutoConfiguration
+      - org.springframework.cloud.aws.autoconfigure.context.ContextStackAutoConfiguration
+      - org.springframework.cloud.aws.autoconfigure.context.ContextRegionProviderAutoConfiguration
