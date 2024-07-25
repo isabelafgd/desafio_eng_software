@@ -54,7 +54,7 @@ Este projeto foi desenvolvido pensando na execução 100% conteinerizada, para e
 
 2. **MongoDB** 
 
-- É possível acessa o MongoDB pela porta 27017
+- É possível acessar o MongoDB pela porta 27017
 
      ```bash
      mongo --host localhost --port 27017 -u admin -p admin --authenticationDatabase btg
