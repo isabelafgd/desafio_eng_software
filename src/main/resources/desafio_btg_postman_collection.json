@@ -1,0 +1,97 @@
+{
+	"info": {
+		"_postman_id": "814fad74-eadd-433f-95b5-44839648ec4d",
+		"name": "Desafio BTG",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "12328724"
+	},
+	"item": [
+		{
+			"name": "Valor Total Pedido",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/pedido/1001/valor",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"pedido",
+						"1001",
+						"valor"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Qtd Pedidos por Cliente",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/cliente/qtdPedidos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"cliente",
+						"qtdPedidos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Qtd Pedidos por Cliente Específico",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/cliente/1/qtdPedidos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"cliente",
+						"1",
+						"qtdPedidos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Pedidos por Cliente",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/cliente/1/pedidos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"cliente",
+						"1",
+						"pedidos"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

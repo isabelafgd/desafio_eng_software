@@ -28,7 +28,7 @@ public class RabbitMQReceiver {
             pedidoService.processarMensagem(mensagem);
             channel.basicAck(tag, false);
         } catch (JsonProcessingException e){
-            LOG.error("Mensagem fora do padrão: {}. Removendo mensagem da fila.", e.getMessage());
+            LOG.error("Mensagem fora do padrao: {}. Removendo mensagem da fila.", e.getMessage());
             try {
                 channel.basicNack(tag, false, false);
             } catch (IOException ioException){

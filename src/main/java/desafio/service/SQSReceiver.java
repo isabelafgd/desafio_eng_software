@@ -26,7 +26,7 @@ public class SQSReceiver {
             pedidoService.processarMensagem(mensagem);
             acknowledgment.acknowledge().get();
         } catch (JsonProcessingException e){
-            LOG.error("Mensagem fora do padrão: {}. Removendo mensagem da fila.", e.getMessage());
+            LOG.error("Mensagem fora do padrao: {}. Removendo mensagem da fila.", e.getMessage());
             try {
                 acknowledgment.acknowledge().get();
             }catch (InterruptedException | ExecutionException executionException){

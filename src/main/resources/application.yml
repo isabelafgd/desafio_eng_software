@@ -1,5 +1,5 @@
 server:
-  port: 8083
+  port: 8080
 
 cloud:
   aws:
@@ -17,7 +17,7 @@ cloud:
 spring:
   rabbitmq:
     host: localhost
-    port: 8082
+    port: 5672
     username: admin
     password: admin
   data:
